@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-tailwind * {
+  all: revert;
+}
+
+.markdown {
+  h1,
+  h2 {
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  pre {
+    background: #ececec;
+    padding: 15px;
+    border-radius: 6px;
+
+    code {
+      padding: 0;
+      color: black;
+    }
+  }
+
+  blockquote {
+    margin: 0px 0px 16px 0px;
+    padding: 0 16px;
+    color: #6a737d;
+    border-left: 0.25em solid #d3d3d3;
+  }
+
+  tbody,
+  td,
+  tr,
+  thead,
+  th,
+  tfoot {
+    border: 1px solid #d3d3d3;
+  }
+
+  table {
+    border: 1px solid #d3d3d3;
+  }
+
+  td,
+  tr,
+  th {
+    padding: 6px 12px;
+  }
+
+  code {
+    padding: 0 0.4em;
+    font-size: 110%;
+    background-color: #ececec;
+    color: purple;
+    border-radius: 6px;
+  }
+
+  hr {
+    height: 0.25em;
+    border: 0;
+    background-color: #d3d3d3;
+  }
+}
